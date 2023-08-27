@@ -6,7 +6,7 @@ services:
       context: nginx
     container_name: nginx
     ports: 
-      - "8000:80"
+      - "8080:80"
     networks:
       - nodenet
     depends_on:
