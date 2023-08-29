@@ -10,6 +10,8 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-RUN npm install
+RUN chmod +x /usr/src/app/custom-entrypoint.sh
+
+RUN cd src && npm install
 
 EXPOSE 3000
